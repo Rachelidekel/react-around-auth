@@ -1,0 +1,161 @@
+.header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.header__wrapper {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  background: #ffffff;
+}
+
+.header__wrapper-mobile {
+  display: none;
+}
+
+.header__wrapper-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: #000000;
+}
+
+.header__wrapper-mobile_open {
+  display: flex;
+}
+
+.header__user-email {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #ffffff;
+  background: #000000;
+}
+
+.header__logout {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #a9a9a9;
+  background: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+  border: none;
+}
+
+.header__logout:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+.header__link {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.header__link:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.header__hamburger-menu {
+  display: none;
+  visibility: hidden;
+  width: 24px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../images/hamburger-menu-icon.svg);
+  background-position: center;
+  border: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__hamburger-menu:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.header__close-button {
+  background-image: url(../images/Close_Icon.svg);
+  display: none;
+  visibility: hidden;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  background-position: center;
+  border: none;
+  padding: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__close-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    max-width: 320px;
+    margin-bottom: 38px;
+  }
+
+  .header__wrapper-mobile {
+    display: flex;
+    background: #000000;
+  }
+
+  .header__wrapper-desktop {
+    display: none;
+  }
+
+  .header__wrapper-mobile_open {
+    display: none;
+  }
+
+  .header__user-email {
+    display: none;
+  }
+
+  .header__logout {
+    display: none;
+  }
+
+  .header__hamburger-menu {
+    display: flex;
+  }
+
+  .header__close-button {
+    display: none;
+  }
+
+  .header__link {
+    margin-right: 0;
+  }
+}
