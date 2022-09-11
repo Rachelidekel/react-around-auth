@@ -1,5 +1,5 @@
 {
-  "name": "around-react",
+  "name": "around-react-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,5 +45,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://rachelidekel.github.io/around-react-auth/"
+  "homepage": "https://rachelidekel.github.io/react-around-auth/"
 }
