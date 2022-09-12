@@ -85,7 +85,6 @@
 
 .header__hamburger-menu {
   display: none;
-  visibility: hidden;
   width: 24px;
   height: 20px;
   background-color: rgba(0, 0, 0, 0);
@@ -103,16 +102,16 @@
 }
 
 .header__close-button {
-  background-image: url(../images/Close_Icon.svg);
-  display: none;
-  visibility: hidden;
+  background-image: url(../images/header__close_icon.svg);
   width: 30px;
   height: 30px;
-  background: #ffffff;
-  background-position: center;
+  color: #ffffff;
   border: none;
-  padding: 0;
   transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
 
 .header__close-button:hover {
@@ -129,16 +128,18 @@
   .header__wrapper-mobile {
     display: flex;
     background: #000000;
+    max-width: 100%;
   }
 
   .header__wrapper-desktop {
-    display: none;
+    display: flex;
   }
 
   .header__wrapper-mobile_open {
-    display: none;
+    display: flex;
   }
 
+ 
   .header__user-email {
     display: none;
   }
@@ -149,10 +150,6 @@
 
   .header__hamburger-menu {
     display: flex;
-  }
-
-  .header__close-button {
-    display: none;
   }
 
   .header__link {

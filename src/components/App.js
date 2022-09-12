@@ -62,7 +62,7 @@ function App() {
         .checkToken(token)
         .then((res) => {
           if (res) {
-            setEmail(res.email);
+            setEmail(res.data.email);
             setIsLoggedIn(true);
             history.push("/");
           } else {
