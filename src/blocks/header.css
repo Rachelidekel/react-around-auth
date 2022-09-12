@@ -136,7 +136,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 101px;
+    gap: 70px;
+    margin-bottom: 32px;
   }
 
   .header__wrapper-mobile {
@@ -153,13 +154,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    gap: 18px;
   }
 
-  .header__wrapper-desktop.header__user-email {
+  .header__wrapper-desktop .header__user-email {
     display: none;
   }
 
-  .header__wrapper-desktop.header__logout {
+  .header__wrapper-desktop .header__logout {
     display: none;
   }
 
