@@ -2,7 +2,7 @@
 
 ## Description and Functionality
 
-- project on React, featuring authorization and registration
+- Project on React, featuring authorization and registration
 
 - This repository continue the front-end project on React Around the u.s. with added authorization and registration features.
 
