@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-around-auth/static/css/main.d2dedc79.css",
-    "main.js": "/react-around-auth/static/js/main.3e149629.js",
+    "main.css": "/react-around-auth/static/css/main.72f25a38.css",
+    "main.js": "/react-around-auth/static/js/main.1dfa34db.js",
     "static/js/787.298d95a7.chunk.js": "/react-around-auth/static/js/787.298d95a7.chunk.js",
     "static/media/Inter-Medium.woff": "/react-around-auth/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff": "/react-around-auth/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -22,12 +22,12 @@
     "static/media/Vector_pen.svg": "/react-around-auth/static/media/Vector_pen.bcb6d6e37f005dbd5497de4aa6e5fc0a.svg",
     "static/media/Vector_plus.svg": "/react-around-auth/static/media/Vector_plus.6a603a8bf697511f22ab4a6fde6131ff.svg",
     "static/media/hamburger-menu-icon.svg": "/react-around-auth/static/media/hamburger-menu-icon.a4a9c1e9a4334d7ae8fe.svg",
-    "main.d2dedc79.css.map": "/react-around-auth/static/css/main.d2dedc79.css.map",
-    "main.3e149629.js.map": "/react-around-auth/static/js/main.3e149629.js.map",
+    "main.72f25a38.css.map": "/react-around-auth/static/css/main.72f25a38.css.map",
+    "main.1dfa34db.js.map": "/react-around-auth/static/js/main.1dfa34db.js.map",
     "787.298d95a7.chunk.js.map": "/react-around-auth/static/js/787.298d95a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2dedc79.css",
-    "static/js/main.3e149629.js"
+    "static/css/main.72f25a38.css",
+    "static/js/main.1dfa34db.js"
   ]
 }
