@@ -13,6 +13,7 @@
   letter-spacing: 0em;
   text-align: right;
   flex-direction: row;
+  margin-top: 45px;
 }
 
 .header__wrapper {
@@ -132,11 +133,19 @@
   align-items: flex-end;
 }
 
+@media screen and (max-width: 930px) {
+  .header__wrapper {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header {
     max-width: 320px;
     margin-bottom: 38px;
     flex-direction: column;
+    margin-top: 28px;
   }
 
   .header__wrapper_type_mobile {
@@ -156,6 +165,7 @@
 
   .header__wrapper-desktop {
     display: flex;
+    flex-direction: row;
   }
 
   .header__wrapper-mobile-open {
@@ -180,6 +190,14 @@
   }
 
   .header__link {
-    margin-right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header__wrapper {
+    margin: 0 auto;
   }
 }

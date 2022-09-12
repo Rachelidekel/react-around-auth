@@ -48,17 +48,17 @@ function Header({ onLogOut, email }) {
             </div>
           </Route>
         </div>
+        <Route path="/signup">
+          <Link className="header__link" to="/signin">
+            Log in
+          </Link>
+        </Route>
+        <Route path="/signin">
+          <Link className="header__link" to="/signup">
+            Sign up
+          </Link>
+        </Route>
       </div>
-      <Route path="/signup">
-        <Link className="header__link" to="/signin">
-          Log in
-        </Link>
-      </Route>
-      <Route path="/signin">
-        <Link className="header__link" to="/signup">
-          Sign up
-        </Link>
-      </Route>
     </header>
   );
 }

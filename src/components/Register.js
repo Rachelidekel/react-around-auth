@@ -41,7 +41,7 @@ function Register({ onRegister }) {
         <button className="auth__button" type="submit">
           Sign up
         </button>
-        <Link className="auth__link" to="/signup">
+        <Link className="auth__link" to="/signin">
           Already a member? Log in here!
         </Link>
       </form>
