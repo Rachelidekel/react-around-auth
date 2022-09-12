@@ -13,7 +13,10 @@ function PopupWithForm({
   return (
     <div className={`popup popup_type_${name} ${isOpen ? "popup_opened" : ""}`}>
       <div className="popup__container">
-        <button className="popup__close-button" type="button">
+        <button
+          className="popup__close-button popup__close-button_type_tooltip"
+          type="button"
+        >
           <img
             src={close}
             alt="icon of x"

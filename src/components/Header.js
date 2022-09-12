@@ -30,22 +30,24 @@ function Header({ onLogOut, email }) {
       </div>
       <div className="header__wrapper header__wrapper_type_mobile">
         <img src={logo} alt="Around The U.S." className="logo" />
-        <Route exact path="/">
-          <button
-            className={
-              isHeaderMenuOpen
-                ? "header__close-button"
-                : "header__hamburger-menu"
-            }
-            onClick={handleMenuClick}
-          ></button>
-          <div className="header__wrapper-desktop">
-            <p className="header__user-email">{email}</p>
-            <button className="header__logout" onClick={handleLogOut}>
-              Log out
-            </button>
-          </div>
-        </Route>
+        <div className="header__button-wrapper">
+          <Route exact path="/">
+            <button
+              className={
+                isHeaderMenuOpen
+                  ? "header__button header__close-button"
+                  : "header__button header__hamburger-menu"
+              }
+              onClick={handleMenuClick}
+            ></button>
+            <div className="header__wrapper-desktop">
+              <p className="header__user-email">{email}</p>
+              <button className="header__logout" onClick={handleLogOut}>
+                Log out
+              </button>
+            </div>
+          </Route>
+        </div>
       </div>
       <Route path="/signup">
         <Link className="header__link" to="/signin">

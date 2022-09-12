@@ -98,7 +98,6 @@
   background-position: center;
   border: none;
   padding: 0;
-  margin: 10px 0 0 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -117,12 +116,20 @@
   padding: 0;
   background-color: transparent;
   background-repeat: no-repeat;
-  padding: 20px;
 }
 
 .header__close-button:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+
+.header__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__button {
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 600px) {
@@ -135,8 +142,9 @@
   .header__wrapper_type_mobile {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 70px;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 28px;
     margin-bottom: 32px;
   }
 

@@ -196,4 +196,8 @@
   .popup__type_tooltip {
     max-width: 120px;
   }
+
+  .popup__close-button_type_tooltip {
+    right: 110px;
+  }
 }
