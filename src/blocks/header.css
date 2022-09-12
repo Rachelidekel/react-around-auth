@@ -13,7 +13,6 @@
   letter-spacing: 0em;
   text-align: right;
   flex-direction: row;
-  margin-top: 45px;
 }
 
 .header__wrapper {
@@ -145,7 +144,6 @@
     max-width: 320px;
     margin-bottom: 38px;
     flex-direction: column;
-    margin-top: 28px;
   }
 
   .header__wrapper_type_mobile {

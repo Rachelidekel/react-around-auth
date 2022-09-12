@@ -201,6 +201,7 @@ function App() {
           setEmail(email);
           localStorage.setItem("jwt", res.token);
           history.push("/");
+          return res;
         } else {
           setTooltipStatus("fail");
           setIsInfoTooltipOpen(true);

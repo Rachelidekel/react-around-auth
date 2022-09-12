@@ -12,7 +12,7 @@ function InfoTooltip({ isOpen, onClose, status }) {
       name="tooltip"
     >
       {status === "success" ? (
-        <div className="form__control">
+        <div className="form__control form__control_type_tooltip">
           <img
             className="tooltip__icon-sign"
             src={SuccessIcon}

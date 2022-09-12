@@ -1,11 +1,10 @@
 .tooltip__icon-sign {
   max-width: 120px;
-  margin-top: 60px;
   margin: 0 auto;
   border-radius: 0px;
   display: flex;
   justify-content: center;
-  padding-top: 0;
+  padding-top: 26px;
   margin-bottom: 32px;
 }
 
@@ -20,14 +19,14 @@
   max-width: 358px;
   margin-top: 0;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 26px;
 }
 
 @media screen and (max-width: 600px) {
   .tooltip__icon-sign {
     max-width: 120px;
     margin-bottom: 40px;
-    margin-top: 40px;
+    padding-top: 25px;
   }
 
   .tooltip__status-message {
@@ -37,6 +36,6 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }

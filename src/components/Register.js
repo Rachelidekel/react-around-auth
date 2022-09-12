@@ -23,6 +23,7 @@ function Register({ onRegister }) {
           name="email"
           className="auth__input"
           id="auth__email"
+          value={email || ""}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
           required
@@ -32,6 +33,7 @@ function Register({ onRegister }) {
           name="password"
           className="auth__input"
           id="auth__password"
+          value={password || ""}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
           minLength="2"

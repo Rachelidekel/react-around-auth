@@ -102,6 +102,11 @@
   display: none;
 }
 
+.form__control_type_tooltip {
+  margin-bottom: 0;
+  gap: 0;
+}
+
 @media screen and (max-width: 600px) {
   .form {
     max-width: 238px;
