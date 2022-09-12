@@ -112,11 +112,11 @@ function App() {
     api
       .setUserInfo({ name, about })
       .then((data) => {
-        setIsLoading(false);
         setCurrentUser(data);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => setIsLoading(false));
   }
 
   function handleUpdateAvatar(avatar) {
@@ -124,11 +124,11 @@ function App() {
     api
       .setUserAvatar(avatar)
       .then((data) => {
-        setIsLoading(false);
         setCurrentUser(data);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => setIsLoading(false));
   }
 
   function handleCardLike(card) {
@@ -152,13 +152,13 @@ function App() {
     api
       .deleteCard(selectedCard._id)
       .then(() => {
-        setIsLoading(false);
         setCards((cards) =>
           cards.filter((currentCard) => currentCard._id !== selectedCard._id)
         );
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => setIsLoading(false));
   }
 
   function handleAddPlaceSubmit(card) {
@@ -166,11 +166,11 @@ function App() {
     api
       .createCard(card)
       .then((newCard) => {
-        setIsLoading(false);
         setCards([newCard, ...cards]);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => setIsLoading(false));
   }
 
   function onRegister({ email, password }) {
