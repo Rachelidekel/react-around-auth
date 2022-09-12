@@ -19,8 +19,8 @@ function Header({ onLogOut, email }) {
       <div
         className={
           isHeaderMenuOpen
-            ? "header__wrapper header__wrapper-mobile_open"
-            : "header__wrapper header__wrapper-mobile"
+            ? "header__wrapper-mobile-open"
+            : "header__wrapper-mobile"
         }
       >
         <p className="header__user-email">{email}</p>
@@ -28,21 +28,25 @@ function Header({ onLogOut, email }) {
           Log out
         </button>
       </div>
-      <img src={logo} alt="Around The U.S." className="logo" />
-      <Route exact path="/">
-        <button
-          className={
-            isHeaderMenuOpen ? "header__close-button" : "header__hamburger-menu"
-          }
-          onClick={handleMenuClick}
-        ></button>
-        <div className="header__wrapper header__wrapper-desktop">
-          <p className="header__user-email">{email}</p>
-          <button className="header__logout" onClick={handleLogOut}>
-            Log out
-          </button>
-        </div>
-      </Route>
+      <div className="header__wrapper header__wrapper_type_mobile">
+        <img src={logo} alt="Around The U.S." className="logo" />
+        <Route exact path="/">
+          <button
+            className={
+              isHeaderMenuOpen
+                ? "header__close-button"
+                : "header__hamburger-menu"
+            }
+            onClick={handleMenuClick}
+          ></button>
+          <div className="header__wrapper-desktop">
+            <p className="header__user-email">{email}</p>
+            <button className="header__logout" onClick={handleLogOut}>
+              Log out
+            </button>
+          </div>
+        </Route>
+      </div>
       <Route path="/signup">
         <Link className="header__link" to="/signin">
           Log in
